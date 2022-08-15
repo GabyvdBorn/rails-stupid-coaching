@@ -15,17 +15,26 @@
  */
 
  .full {
-  height: 600px;
+  height: 100vh;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
- }
+  background-image: linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 0%), url('backgroud.jpg');
+  background-size: cover;
+}
+
+body {
+
+  background-position: center;
+}
+
 
 h1{
   font-family: monospace;
+  color: white;
+  letter-spacing: 1px;
 }
 
 p {
@@ -34,11 +43,16 @@ p {
 }
 
 a {
-  background-color: green;
+  background-color: #A6AE91;
   color: white;
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 25px;
   font-family: monospace;
+}
+
+a:hover {
+  color: #E0E7DA;
+  transition-delay: 0.1s;
 }
 
 .input {
@@ -46,19 +60,39 @@ a {
   border-radius: 10px;
   padding: 5px 10px;
   font-family: monospace;
+  border: none;
+  background-color: white;
+  color: #A6AE91;
 }
+
+.input::placeholder {
+  color: #D6DECE !important;
+  opacity: 1;
+  }
 
 .button {
   margin-left: 10px;
   padding: 2px 30px;
   border-radius: 5px;
   font-family: monospace;
+  background-color: #A6AE91;
+  border: none;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 20px;
 }
 
 .question {
-  background-color: blue;
+    background-color: #A6AE91;
+    border-color: #A6AE91;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
 }
 
 .answer{
-  background-color: crimson;
+  background-color: #A6AE91;
+  color: white;
+  padding: 5px 25px;
+  border-radius: 10px;
 }
