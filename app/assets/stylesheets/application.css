@@ -48,11 +48,14 @@ a {
   text-decoration: none;
   padding: 10px 25px;
   font-family: monospace;
+  border-radius: 5px;
 }
 
 a:hover {
-  color: #E0E7DA;
+  color: #D6DECE;
   transition-delay: 0.1s;
+  padding: 10px 30px;
+  border-radius: 5px;
 }
 
 .input {
